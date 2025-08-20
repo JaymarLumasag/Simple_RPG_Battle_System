@@ -9,12 +9,19 @@ Requirements:
 Classes:
 
 Character (abstract):
+
 Fields: name, health, attackPower, defense
+
 Methods: attack(), takeDamage(), isAlive(), etc.
+
 Player (extends Character):
+
 Additional method: heal()
+
 Method to choose action (attack/defend/heal)
+
 Enemy (extends Character):
+
 Always attacks
 Gameplay:
 
