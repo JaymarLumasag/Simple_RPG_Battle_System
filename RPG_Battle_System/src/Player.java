@@ -7,6 +7,10 @@ public class Player extends Character{
         this.defense = pDefense;
     }
 
+    public Player(String pName) {
+        this.name = pName;
+    }
+
     public void heal(){
 
     }
