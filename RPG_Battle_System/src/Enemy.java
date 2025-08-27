@@ -6,6 +6,4 @@ public class Enemy extends Character {
         this.attackPower= eAttackPower;
         this.defense = eDefense;
     }
-
-
 }

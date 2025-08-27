@@ -1,5 +1,7 @@
-public class Player extends Character{
+import java.util.Scanner;
 
+public class Player extends Character{
+    Scanner input = new Scanner(System.in);
     public Player(String pName, int pHealth, int pAttackPower, int pDefense) {
         this.name = pName;
         this.health = pHealth;
@@ -8,10 +10,13 @@ public class Player extends Character{
     }
 
     public void heal(){
-
+        this.health = health + 10;
+        System.out.println(this.name + " healed! Your HP is: " + this.health);
     }
 
     public char chooseAction(){
-        return ('a');
+        System.out.println("Choose Player Action (a) attack, (h) heal: ");
+        char playerAction = input.next().charAt(0);
+        return (playerAction);
     }
 }
